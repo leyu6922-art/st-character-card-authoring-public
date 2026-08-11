@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "manifest_kind": "public-export",
-  "status": "candidate-strict-core",
-  "release_line": "v0.1.0-public-readiness-core-rc2",
-  "public_repository": "st-character-card-authoring",
+  "status": "candidate-opinionated-workflow",
+  "release_line": "v0.1.0-leyu-opinionated-workflow",
+  "public_repository": "st-character-card-authoring-public",
   "history_policy": {
     "mode": "fresh_history",
     "source_history_exported": false,
@@ -172,9 +172,10 @@
     "templates/README.md"
   ],
   "current_blockers": [
-    "This RC is Public Release Infrastructure only; Public Authoring Core is not bundled.",
+    "The bundled authoring workflow is opinionated and personal; it is not presented as an official or universal SillyTavern standard.",
+    "The nested release/public-core/RC2 remains a separately versioned strict Core artifact and is not the version identity of this workflow repository.",
     "Remote GitHub Actions status is not independently confirmed in the current environment.",
-    "Native stage routing, preset integration, Hermes integration, and SillyTavern runtime remain optional or private overlays."
+    "Native stage routing, preset integration, Hermes integration, and SillyTavern runtime remain optional or host-dependent capabilities."
   ],
   "strict_core_policy": {
     "unknown_provenance": "exclude",
@@ -199,5 +200,10 @@
   "capability_contract": {
     "authoritative_manifest": "skill-manifest.json",
     "level_definitions": "skill-manifest.json"
-  }
+  },
+  "product_kind": "opinionated_personal_workflow",
+  "workflow_profile": "leyu-workflow",
+  "artifact_profile": "strict-public-core",
+  "artifact_release_line": "v0.1.0-public-readiness-core-rc2",
+  "strict_core_artifact": "release/public-core/"
 }

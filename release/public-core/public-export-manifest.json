@@ -3,7 +3,7 @@
   "manifest_kind": "public-export",
   "status": "candidate",
   "release_line": "v0.1.0-public-readiness-core-rc2",
-  "public_repository": "st-character-card-authoring",
+  "public_repository": "st-character-card-authoring-public",
   "artifact_policy": {
     "source_history": "not included",
     "unknown_provenance": "excluded",

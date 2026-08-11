@@ -43,4 +43,4 @@ Do not interpret `STATIC_VERIFIED` as real-host runtime acceptance.
 
 No third-party novel, character, image, preset, or community tutorial content is intentionally included in this Core candidate. Users remain responsible for verifying ownership, redistribution rights, platform rules, and any adult-content obligations before publishing an artifact.
 
-The RC2 candidate has a real MIT license and a resolved Core provenance manifest. Public publication still requires the separate repository/release decision; this package does not claim the missing Authoring Core or runtime integrations.
+The RC2 candidate has a real MIT license and a resolved Core provenance manifest. It remains a separately versioned strict Core artifact inside the broader `leyu-workflow` distribution; it does not define the parent workflow's release version or claim runtime integrations.

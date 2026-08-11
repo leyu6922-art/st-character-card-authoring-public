@@ -1,6 +1,6 @@
 # Sources and redistribution boundary
 
-The public edition contains original workflow documentation, neutral templates, validation scripts, tests, and release tooling authored for this project.
+The public edition contains Leyu's original opinionated workflow documentation, neutral templates, validation scripts, tests, and release tooling authored for this project.
 
 It intentionally excludes:
 
@@ -11,4 +11,4 @@ It intentionally excludes:
 
 The MIT License in `LICENSE` applies to original project material only. It does not grant rights to external novels, characters, presets, tutorials, images, or other intellectual property referenced by a user's private project. Review ownership and platform rules before using the workflow with external material.
 
-The release manifests under `release/` describe the stricter Public Core artifact boundary. Optional sibling skills and real SillyTavern runtime integrations are not bundled by that Core candidate.
+The root manifests describe the opinionated workflow distribution. The manifests under `release/public-core/` describe a stricter, separately versioned Public Core artifact boundary. Optional sibling skills and real SillyTavern runtime integrations are not bundled by that Core candidate.

@@ -1,6 +1,6 @@
 # Public release boundary
 
-This repository contains a reusable, validation-first workflow for authoring SillyTavern character cards. It is the public, sanitized workflow edition—not a dump of any private production workspace.
+This repository contains Leyu's reusable, validation-first, opinionated workflow for authoring SillyTavern character cards. It is the public, sanitized workflow edition—not a dump of any private production workspace or an official universal standard.
 
 ## Removed from the public edition
 

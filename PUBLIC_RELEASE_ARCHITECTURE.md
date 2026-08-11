@@ -1,15 +1,16 @@
 # Public Release Architecture
 
-> Status: **DRAFT / v0.1.0-public-readiness**
-> This document defines the transition from the internal production Skill to a reproducible public authoring framework. It is an architecture contract, not a promise that every runtime behavior is already verified.
+> Status: **CANDIDATE / v0.1.0-leyu-opinionated-workflow**
+> This document defines the public distribution of Leyu's opinionated authoring workflow. It is an architecture contract, not a promise that every runtime behavior is already verified. The nested `release/public-core/` directory remains a separately versioned strict Core artifact.
 
 ## 0. Decisions
 
-1. **v0.x migration model:** keep the private production repository as the internal source and export a sanitized public tree into a new repository with fresh Git history.
-2. **v1.x target model:** the public repository becomes the Core; private preferences, private case material, experiments, and local overlays depend on Core instead of being its only source.
-3. The current private repository must not be made public directly.
-4. `skill-manifest.json` is the authoritative capability, dependency, profile, and version contract. `public-export-manifest.json` is the authoritative public export, redaction, and fresh-history contract. README tables, `doctor.py`, CI, and installers must derive from these files or be checked against them.
-5. Trust is external to the project being checked. A project manifest must never be able to declare itself trusted.
+1. **Current distribution model:** this repository publishes a fresh-history, sanitized version of Leyu's personal authoring workflow.
+2. The workflow includes personal preferences, production heuristics, design patterns, validation scripts, templates, references, and delivery gates; it does not claim to be a universal standard.
+3. `release/public-core/` is a narrower, separately versioned strict Core candidate. Its RC2 identity must not be confused with the parent workflow release.
+4. The original private production repository remains private.
+5. `skill-manifest.json` is the authoritative capability, dependency, profile, and workflow-version contract. `public-export-manifest.json` is the authoritative public boundary, redaction, and fresh-history contract. README tables, `doctor.py`, CI, and installers must derive from these files or be checked against them.
+6. Trust is external to the project being checked. A project manifest must never be able to declare itself trusted.
 
 ## 1. Goals and non-goals
 
@@ -30,7 +31,7 @@
 
 ## 2. Repository topology
 
-### v0.x: sanitized distribution
+### Current: sanitized opinionated workflow distribution
 
 ```text
 private production source
@@ -40,9 +41,9 @@ private production source
 public distribution repository (fresh history)
 ```
 
-The public repository is a distribution mirror during migration. Public changes must be reconciled into the reviewed source process; a blanket copy from the live internal tree is forbidden.
+The public repository is an independent distribution of the reviewed opinionated workflow. Public changes should be reconciled into the reviewed source process; a blanket copy from the live internal tree is forbidden.
 
-### v1.x: Core plus Overlay
+### Future relationship: Core plus Overlay
 
 ```text
 Public Core
@@ -60,7 +61,7 @@ The overlay must not redefine Core contracts silently. It may add profiles, exam
 | Level | Name | Capability | Minimum dependencies |
 |---|---|---|---|
 | L1 | Core Validation | CCv3, Worldbook, Manifest, semantic and delivery validators | This repository |
-| L2 | Authoring Workflow | Agent planning, interview, project design, build, audit, delivery | Hermes Agent + this repository |
+| L2 | Leyu Authoring Workflow | Agent planning, interview, project design, build, audit, delivery, and personal quality gates | Hermes Agent + this repository |
 | L3 | Advanced Routing | Native stage routing, stage-entry contracts, stage memory integration | `standalone-card-stage-routing` |
 | L4 | Full Runtime Stack | SillyTavern runtime, preset, extensions, UI/state and real-host checks | SillyTavern + configured extensions + sibling skills |
 
@@ -113,7 +114,7 @@ Private or separately reviewed:
 - local absolute paths and usernames;
 - private cards, novels, project names, and build reports;
 - unlicensed third-party IP, copied dialogue, and source-derived examples;
-- personal preference overlays and unpublished experiments;
+- unpublished experiments and private overlays;
 - backups, archives, temporary files, credentials, and request logs.
 
 Every public release must pass both current-tree and export-tree audits. A fresh public history is preferred; historical auditing remains useful for deciding what must not be exported.

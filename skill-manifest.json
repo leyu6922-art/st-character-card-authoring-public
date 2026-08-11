@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "manifest_kind": "skill-capability",
-  "status": "draft",
+  "status": "candidate",
   "skill_name": "st-character-card-authoring",
-  "release_version": "0.1.0-public-readiness-core-rc2",
+  "release_version": "0.1.0-leyu-opinionated-workflow",
   "compatibility": {
     "python": ">=3.11",
     "card_formats": [
       "CCv3"
     ],
-    "hermes": "not_required_for_public_core",
+    "hermes": "required_for_agent_workflow",
     "sillytavern_runtime": "not_claimed_without_runtime_evidence"
   },
   "capabilities": {
@@ -39,11 +39,22 @@
     },
     "authoring_workflow": {
       "level": "L2",
-      "status": "not_bundled",
+      "status": "available",
+      "workflow_kind": "opinionated_personal_workflow",
+      "profile": "leyu-workflow",
+      "bundled": true,
+      "bundled_paths": [
+        "SKILL.md",
+        "scripts/**",
+        "references/**",
+        "templates/**",
+        "tests/**"
+      ],
       "requires": [
         "hermes-agent"
       ],
-      "missing_behavior": "NOT_BUNDLED"
+      "evidence_level": "STATIC_VERIFIED",
+      "missing_behavior": "HOST_REQUIRED"
     },
     "native_stage_routing": {
       "level": "L3",
@@ -139,11 +150,17 @@
     "derived_documents_must_be_checked": true,
     "capability_level_definitions": "this_file"
   },
-  "capability_level": "L1",
+  "capability_level": "L2",
   "capability_level_definitions": {
-    "L1": "Public Core validation and release-integrity infrastructure",
-    "L2": "General SillyTavern authoring workflow; not bundled in strict Public Core",
+    "L1": "Portable CCv3/Worldbook validation and release-integrity infrastructure",
+    "L2": "Bundled Leyu opinionated SillyTavern authoring workflow; Hermes Agent is required for Agent execution",
     "L3": "Native stage routing via optional sibling capability",
     "L4": "Full runtime stack via configured host and optional integrations"
+  },
+  "distribution": {
+    "kind": "opinionated_personal_workflow",
+    "profile": "leyu-workflow",
+    "strict_core_artifact": "release/public-core/",
+    "strict_core_version": "0.1.0-public-readiness-core-rc2"
   }
 }

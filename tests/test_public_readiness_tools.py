@@ -14,15 +14,35 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     skill_manifest = json.loads((ROOT / "skill-manifest.json").read_text(encoding="utf-8"))
     assert export_manifest["contract_sources"]["skill_capability_manifest"] == "skill-manifest.json"
     assert skill_manifest["single_source_policy"]["public_export_scope_and_redaction"] == "public-export-manifest.json"
-    assert skill_manifest["capability_level"] == "L1"
+    assert skill_manifest["status"] == "candidate"
+    assert skill_manifest["release_version"] == "0.1.0-leyu-opinionated-workflow"
+    assert skill_manifest["capability_level"] == "L2"
+    assert skill_manifest["distribution"]["profile"] == "leyu-workflow"
     capabilities = skill_manifest["capabilities"]
     assert isinstance(capabilities, dict)
     assert capabilities["core_validation"]["level"] == "L1"
     assert capabilities["core_validation"]["status"] == "available"
     assert capabilities["release_export"]["status"] == "available"
-    assert capabilities["authoring_workflow"]["status"] == "not_bundled"
+    assert capabilities["authoring_workflow"]["status"] == "available"
+    assert capabilities["authoring_workflow"]["workflow_kind"] == "opinionated_personal_workflow"
+    assert capabilities["authoring_workflow"]["profile"] == "leyu-workflow"
+    assert capabilities["authoring_workflow"]["bundled"] is True
+    assert capabilities["authoring_workflow"]["evidence_level"] == "STATIC_VERIFIED"
     assert capabilities["native_stage_routing"]["status"] == "optional_dependency"
     assert capabilities["runtime_stack"]["status"] == "not_configured"
+    export_manifest = json.loads((ROOT / "public-export-manifest.json").read_text(encoding="utf-8"))
+    assert export_manifest["public_repository"] == "st-character-card-authoring-public"
+    assert export_manifest["release_line"] == "v0.1.0-leyu-opinionated-workflow"
+    assert export_manifest["product_kind"] == "opinionated_personal_workflow"
+
+
+def test_skill_frontmatter_declares_the_host_dependency_without_optional_sibling_claims():
+    text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
+    frontmatter = text.split("---", 2)[1]
+    assert "version: '0.1.0-leyu-opinionated-workflow'" in frontmatter
+    assert "dependencies:" in frontmatter
+    assert "- hermes-agent" in frontmatter
+    assert "dependencies: []" not in frontmatter
 
 
 def test_doc_audit_reports_missing_relative_reference(tmp_path):

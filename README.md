@@ -1,10 +1,33 @@
-# SillyTavern 角色卡创作技能 (st-character-card-authoring)
+# Leyu Opinionated SillyTavern 角色卡创作工作流
 
-> **公开版说明**：这是经过脱敏的通用制卡流程。私有角色卡、小说原文、案例文件、个人规划、机器路径和未审查的第三方材料不包含在公开版中。发布边界见 [`PUBLIC_RELEASE.md`](PUBLIC_RELEASE.md)、[`SOURCES.md`](SOURCES.md) 与 [`SECURITY.md`](SECURITY.md)。
+> **公开版定位**：这是 Leyu 长期使用并持续迭代的、带有明确个人偏好的 SillyTavern 角色卡制作工作流公开版（**opinionated personal workflow**）。它不是官方标准，也不声称是唯一正确的制卡方式。
+>
+> 私有角色卡、小说原文、案例文件、个人规划、机器路径和未审查的第三方材料不包含在公开版中。发布边界见 [`PUBLIC_RELEASE.md`](PUBLIC_RELEASE.md)、[`SOURCES.md`](SOURCES.md) 与 [`SECURITY.md`](SECURITY.md)。
 
 基于AI Agent的SillyTavern角色卡自动化创作全流程工具链。从小说文本到可导入的角色卡JSON，覆盖世界观构建、角色建模、世界书编写、验证审查全链路。
 
 部分 NTR/NTL、成人主题和其他敏感虚构场景仅作为 18+ 方法论示例；使用者必须自行确认角色成年、内容合规、来源授权和平台规则。仓库不分发小说原文或私有角色卡。
+
+## 产品边界
+
+本仓库发布的是一套完整的个人生产方法：
+
+- 角色与世界书建模方式；
+- Greeting、叙事、玩家代理和阶段结构偏好；
+- Manifest 驱动的构建与交付流程；
+- 语义、触发、Token、质量和最终交付门控；
+- 可直接复用的脚本、模板、参考文档和测试。
+
+其中的判断和门槛代表 Leyu 的实践偏好，不是 SillyTavern 官方规范。你可以直接采用，也可以 Fork 后替换成自己的规则。`release/public-core/` 下的 RC2 文件是独立、较窄的 Public Core 候选工件；它不代表本仓库完整工作流的产品定位或版本号。
+
+**当前发行版本：** `0.1.0-leyu-opinionated-workflow`
+
+## 依赖边界
+
+- `scripts/`、`references/`、`templates/` 和测试可作为本地工作流使用。
+- 在 Hermes Agent 中作为 Skill 触发和执行时，需要 Hermes Agent 主机。
+- `standalone-card-stage-routing`、`sillytavern-preset-debugging` 等是可选 sibling 能力，不是基础工作流的隐式依赖。
+- SillyTavern、Tavern Helper 和真实宿主运行时不随仓库打包，也不由静态测试代替。
 
 ## 🎯 核心能力
 
@@ -128,7 +151,7 @@ python scripts/final_delivery_gate.py path/to/card.json
 
 ## 📋 审查模板体系
 
-6个通用审查模板覆盖全部卡原型：
+7个审查模板覆盖全部卡原型：
 
 | 模板 | 用途 |
 |------|------|
