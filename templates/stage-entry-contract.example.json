@@ -1,0 +1,56 @@
+{
+  "schema_version": 2,
+  "mode": "leyu_large_native_greeting_stage_v1",
+  "architecture_mode": "stage_routing",
+  "route_source": "greeting_title",
+  "stages": ["P0", "P1", "P2"],
+  "required_packs": ["阶段核心", "成人体验", "场景体验", "事件库"],
+  "min_units_per_pack": 6,
+  "min_unit_chars": 120,
+  "phase_memory": {
+    "causal_archives": ["角色A·全程因果档案", "角色B·全程因果档案"],
+    "memory_gate": "绝对优先级·阶段记忆与叙事可见性协议",
+    "system_prompt_anchor_required": true
+  },
+  "entries": {
+    "剧情导演与事件推进协议": {
+      "role": "constant"
+    },
+    "角色A·全程因果档案": {
+      "role": "constant"
+    },
+    "绝对优先级·阶段记忆与叙事可见性协议": {
+      "role": "constant"
+    },
+    "阶段核心_P0": {
+      "role": "stage_pack",
+      "stage": "P0",
+      "pack": "阶段核心"
+    },
+    "成人体验_P0": {
+      "role": "stage_pack",
+      "stage": "P0",
+      "pack": "成人体验"
+    },
+    "场景体验_P0": {
+      "role": "stage_pack",
+      "stage": "P0",
+      "pack": "场景体验"
+    },
+    "事件库_P0": {
+      "role": "stage_pack",
+      "stage": "P0",
+      "pack": "事件库"
+    },
+    "白佲人物速览": {
+      "role": "character",
+      "natural_keys": ["白佲"],
+      "load_examples": ["白佲走进客厅。"]
+    },
+    "场景·客厅": {
+      "role": "scene",
+      "natural_keys": ["客厅"],
+      "load_examples": ["客厅的灯还亮着。"]
+    }
+  }
+}

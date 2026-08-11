@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "state_shape": {
+    "revision": "integer",
+    "current_stage": "stage_id",
+    "facts_in_force": "string[]",
+    "knowledge_boundaries": "object",
+    "unresolved_threads": "string[]",
+    "event_status": "enum-map",
+    "transition_flags": "string[]",
+    "last_major_event": "string",
+    "last_update_source": "enum"
+  },
+  "allowed_event_status": [
+    "available",
+    "active",
+    "executed",
+    "rejected",
+    "skipped",
+    "invalidated"
+  ],
+  "writers": [
+    {
+      "trigger": "major_fact_changed",
+      "writer": "model",
+      "fields": [
+        "facts_in_force",
+        "knowledge_boundaries",
+        "event_status",
+        "transition_flags",
+        "last_major_event"
+      ]
+    }
+  ],
+  "conflict_policy": "latest_confirmed_fact_wins",
+  "recovery_policy": "greeting_baseline_plus_latest_valid_record",
+  "manifest_recovery_policy": "latest_valid_record"
+}

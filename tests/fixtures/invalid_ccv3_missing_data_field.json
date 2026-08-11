@@ -1,0 +1,20 @@
+{
+  "spec": "chara_card_v3",
+  "spec_version": "3.0",
+  "data": {
+    "name": "Invalid core fixture",
+    "description": "",
+    "tags": [],
+    "creator": "fixture",
+    "character_version": "1.0",
+    "mes_example": "",
+    "extensions": {},
+    "system_prompt": "",
+    "post_history_instructions": "",
+    "first_mes": "Hi.",
+    "alternate_greetings": [],
+    "personality": "",
+    "scenario": "",
+    "group_only_greetings": []
+  }
+}

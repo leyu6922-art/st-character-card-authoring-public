@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "prototype": "A",
+  "prototype_confidence": "medium",
+  "prototype_reason": [
+    "Ordinary framework-first character card with player-led open exploration"
+  ],
+  "content_mode": "r18",
+  "routing_mode": "flat",
+  "runtime_driver": "native_st",
+  "narrative_mode": "open_sandbox",
+  "event_mode": "open_situation_seed",
+  "route_policy": "player_led",
+  "corpus_mode": "curated_anchor_set",
+  "sandbox_scope": "focused",
+  "event_policy": "candidate_pool",
+  "transition_policy": "none",
+  "greeting_mode": "player_prose",
+  "require_build": true,
+  "canonical_sources": [],
+  "source_coverage_required": false,
+  "narrative_contract": "narrative-contract.open-situation-seed.example.json",
+  "runtime_state": {
+    "authority": "none",
+    "update_mode": "manual",
+    "contract": "",
+    "recovery_policy": "greeting_baseline",
+    "reliability": "best_effort"
+  },
+  "semantic_manifest": null,
+  "trace": {
+    "planned_modules": [
+      "framework-first",
+      "curated-anchor-set",
+      "open-situation-seeds",
+      "player-led-route"
+    ],
+    "note": "A seed is a promptable possibility, not an event fact. Static gates do not prove SillyTavern runtime behavior."
+  }
+}

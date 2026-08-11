@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "narrative_mode": "soft_stage",
+  "event_mode": "guided_candidate",
+  "event_policy": "candidate_pool",
+  "transition_policy": "outcome_based",
+  "facts": {
+    "F-P2-01": {
+      "statement": "当前阶段已经确认的事实"
+    },
+    "F-P3-01": {
+      "statement": "只有结果发生后才可进入的后续事实"
+    }
+  },
+  "stages": {
+    "P2": {
+      "facts_in_force": ["F-P2-01"],
+      "knowledge_boundaries": {
+        "角色A": ["F-P2-01"],
+        "角色B": []
+      },
+      "unresolved_threads": ["T-P2-01"],
+      "candidate_events": ["P2-E01"],
+      "transition_conditions": ["TC-P2-P3-01"],
+      "forbidden_future_facts": ["F-P3-01"]
+    },
+    "P3": {
+      "terminal": true,
+      "facts_in_force": ["F-P3-01"],
+      "knowledge_boundaries": {
+        "角色A": ["F-P2-01", "F-P3-01"]
+      },
+      "unresolved_threads": [],
+      "candidate_events": [],
+      "transition_conditions": [],
+      "forbidden_future_facts": []
+    }
+  },
+  "events": {
+    "P2-E01": {
+      "stage": "P2",
+      "prerequisites": ["F-P2-01"],
+      "entry_points": ["地点、人物或自然行为入口"],
+      "npc_initiative": ["NPC主动观察、试探或改变环境"],
+      "player_interruptible": true,
+      "auto_fact": false,
+      "possible_outcomes": ["玩家介入", "玩家拒绝", "NPC改变策略"],
+      "invalidated_by": ["F-P3-01"],
+      "state_writes": ["facts_in_force", "event_status", "unresolved_threads"],
+      "source_evidence": ["build-only source reference"]
+    }
+  },
+  "transitions": {
+    "TC-P2-P3-01": {
+      "from": "P2",
+      "to": "P3",
+      "requires": ["F-P3-01"],
+      "requires_any": [],
+      "blocked_by": [],
+      "irreversible": true
+    }
+  }
+}

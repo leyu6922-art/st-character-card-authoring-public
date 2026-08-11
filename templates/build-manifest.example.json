@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "prototype": "A",
+  "prototype_confidence": "high",
+  "prototype_reason": [
+    "玩家身份、视角和运行架构均可从规划书直接判定"
+  ],
+  "content_mode": "r18",
+  "routing_mode": "flat",
+  "greeting_mode": "player_prose",
+  "greeting_appendix_standard": "none",
+  "require_build": false,
+  "canonical_sources": [],
+  "source_coverage_required": false,
+  "source_coverage_minimum": 0.6,
+  "player_agency_modes_required": false,
+  "semantic_manifest": null,
+  "trace": {
+    "planned_modules": [
+      "prototype-A",
+      "source-material-workflow",
+      "greeting-player-prose"
+    ],
+    "note": "Trace only. final gate validates artifacts and declared architecture, not whether an agent actually read a document."
+  }
+}

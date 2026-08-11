@@ -1,0 +1,9 @@
+{
+  "status": "DECLARED_UNVERIFIED",
+  "checks": {
+    "write": false,
+    "read": false,
+    "recovery": false
+  },
+  "fixture": "external-extension-fixture.json"
+}

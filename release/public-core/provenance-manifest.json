@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "provenance",
+  "release_line": "v0.1.0-public-readiness-core-rc2",
+  "policy": "only explicitly generated neutral Core material is resolved; unknown/third-party files are excluded",
+  "files": {
+    "README.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "SKILL.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "PUBLIC_RELEASE_ARCHITECTURE.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "public-export-manifest.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "skill-manifest.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    ".gitignore": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "SOURCES.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "NOTICE.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "CHANGELOG.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "templates/README.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "scripts/audit_docs.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "scripts/audit_public_release.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "scripts/doctor.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "scripts/export_public.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "tests/test_public_export.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "tests/test_public_readiness_tools.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core override or public-readiness implementation"
+    },
+    "LICENSE": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core/LICENSE",
+      "license": "MIT"
+    },
+    "scripts/audit_public_core_integrity.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "release/public-core/audit_public_core_integrity.py"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "narrative_mode": "open_sandbox",
+  "event_mode": "open_situation_seed",
+  "event_policy": "candidate_pool",
+  "transition_policy": "none",
+  "facts": {},
+  "events": {
+    "HOME-SEED": {
+      "prerequisites": [],
+      "entry_points": [
+        "observable clue, object, or behavior"
+      ],
+      "npc_initiative": [
+        "NPC or environment may notice, reveal, or alter the current scene"
+      ],
+      "player_interruptible": true,
+      "auto_fact": false,
+      "source_evidence": [
+        "source-note-id"
+      ],
+      "open_directions": [
+        "investigation",
+        "protection",
+        "negotiation",
+        "ignore or redirect"
+      ],
+      "not_fixed": [
+        "timing",
+        "specific motivation",
+        "development order",
+        "dialogue",
+        "outcome",
+        "stage transition"
+      ]
+    }
+  }
+}

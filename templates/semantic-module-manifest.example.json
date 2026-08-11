@@ -1,0 +1,80 @@
+{
+  "semantic_profile": "modular_semantic_v1",
+  "text_profile": "semantic_markdown_v1",
+  "text_metadata_policy": "generated",
+  "contract_profile": "open_semantic_module_v1",
+  "contract_level": "standard",
+  "project_id": "example_open_card",
+  "source_scope": {
+    "canonical_sources": [],
+    "excluded_sources": [],
+    "source_hashes": {}
+  },
+  "player_anchor": {
+    "mode": "{{user}}",
+    "entity_id": "player"
+  },
+  "narrative_mode": "open_sandbox",
+  "architecture_mode": "flat",
+  "authoritative_route": "natural_keys",
+  "authoritative_state": "narrative_only",
+  "runtime_capabilities": [
+    "natural_trigger",
+    "open_sandbox"
+  ],
+  "content_surface": "runtime_clean",
+  "visibility_policy": {
+    "model": "runtime_visible",
+    "character_knowledge": "declared_per_module",
+    "build_only": [
+      "source_refs",
+      "evidence_status",
+      "mutability",
+      "projection_map"
+    ]
+  },
+  "policy_bundle": "RULE_OPEN_CARD_V1",
+  "characters": {
+    "示例角色": {
+      "entity_id": "char_example",
+      "modules": [
+        "基础信息与关系锚点",
+        "核心心理与性格",
+        "行为响应与特质交叠",
+        "语言与称谓",
+        "关系网与情感动态",
+        "信息边界与误写红线"
+      ]
+    }
+  },
+  "world_modules": [
+    "世界观/总设定/基础框架",
+    "世界观/地点/示例地点"
+  ],
+  "projections": [
+    {
+      "semantic_ref": "世界观/地点/示例地点",
+      "runtime_role": "scene",
+      "flat": {
+        "load": "selective",
+        "natural_keys": [
+          "示例入口"
+        ]
+      }
+    }
+  ],
+  "module_records": {
+    "角色/示例角色/核心心理与性格": {
+      "module_type": "character_psychology",
+      "text_profile": "semantic_markdown_v1",
+      "content_schema": "character_psychology_v1",
+      "contract_profile": "open_semantic_module_v1"
+    },
+    "世界观/地点/示例地点": {
+      "module_type": "place",
+      "text_profile": "semantic_markdown_v1",
+      "content_schema": "place_v1",
+      "contract_profile": "open_semantic_module_v1"
+    }
+  }
+}

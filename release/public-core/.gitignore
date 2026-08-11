@@ -1,0 +1,9 @@
+# Public Core Ignore Rules
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.env*
+*.tmp
+*.bak
+release/

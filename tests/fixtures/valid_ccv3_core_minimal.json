@@ -1,0 +1,44 @@
+{
+  "spec": "chara_card_v3",
+  "spec_version": "3.0",
+  "data": {
+    "name": "Core fixture",
+    "description": "",
+    "tags": [],
+    "creator": "fixture",
+    "character_version": "1.0",
+    "mes_example": "",
+    "extensions": {},
+    "system_prompt": "",
+    "post_history_instructions": "",
+    "first_mes": "Hi.",
+    "alternate_greetings": [],
+    "personality": "",
+    "scenario": "",
+    "creator_notes": "",
+    "group_only_greetings": [],
+    "character_book": {
+      "name": "Core lorebook",
+      "description": "Allowed metadata",
+      "scan_depth": 2,
+      "token_budget": 512,
+      "recursive_scanning": false,
+      "extensions": {},
+      "entries": [
+        {
+          "id": "fixture-entry",
+          "keys": ["fixture"],
+          "content": "Fixture lore content.",
+          "extensions": {},
+          "enabled": true,
+          "insertion_order": 100,
+          "use_regex": false,
+          "constant": false,
+          "selective": false,
+          "secondary_keys": [],
+          "position": "after_char"
+        }
+      ]
+    }
+  }
+}

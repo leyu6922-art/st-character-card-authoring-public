@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "public-export",
+  "status": "candidate-strict-core",
+  "release_line": "v0.1.0-public-readiness-core-rc2",
+  "public_repository": "st-character-card-authoring",
+  "history_policy": {
+    "mode": "fresh_history",
+    "source_history_exported": false,
+    "source_branches_exported": false,
+    "source_tags_exported": false,
+    "rationale": "The private production repository contains internal paths, project names, and historical material."
+  },
+  "authoritative_documents": [
+    "PUBLIC_RELEASE_ARCHITECTURE.md",
+    "skill-manifest.json",
+    "public-export-manifest.json"
+  ],
+  "review_manifest": "release/public-review-manifest.json",
+  "provenance_manifest": "release/public-core/provenance-manifest.json",
+  "require_provenance": true,
+  "manual_review_policy": {
+    "unresolved_action": "fail",
+    "bulk_include_flag": "forbidden",
+    "approval_statuses": [
+      "approved_public",
+      "third_party_reviewed",
+      "rejected_private"
+    ]
+  },
+  "source_scope": {
+    "include": [
+      "scripts/audit_docs.py",
+      "scripts/audit_public_release.py",
+      "scripts/doctor.py",
+      "scripts/export_public.py",
+      "tests/test_public_export.py",
+      "tests/test_public_readiness_tools.py",
+      "scripts/audit_public_core_integrity.py"
+    ],
+    "exclude": [
+      ".git/**",
+      "**/.git/**",
+      ".pytest_cache/**",
+      "**/__pycache__/**",
+      "**/*.pyc",
+      "**/*.pyo",
+      "**/*.bak",
+      "**/*.tmp",
+      "**/_archived/**",
+      "**/_maintenance_backups/**",
+      "build/**",
+      "reports/**",
+      "release/**",
+      "dist/**",
+      "references/**",
+      "templates/**",
+      "docs/**",
+      "profiles/**",
+      "examples/**",
+      "project-template/**",
+      "conformance/**",
+      "*.env",
+      ".env*",
+      "**/*token*",
+      "**/*credential*"
+    ],
+    "manual_review": []
+  },
+  "redaction_rules": [
+    {
+      "id": "private-path",
+      "action": "fail",
+      "patterns": [
+        "C:\\Users\\<name>",
+        "D:\\hermes",
+        "/home/<name>/",
+        "/mnt/c/Users/<name>/"
+      ]
+    },
+    {
+      "id": "secret-material",
+      "action": "fail",
+      "patterns": [
+        "PRIVATE_KEY_BLOCK_MARKER",
+        "github-classic-token-prefix",
+        "github-fine-grained-token-prefix",
+        "sk-<long-token>",
+        "API_KEY=<value>",
+        "TOKEN=<value>"
+      ]
+    },
+    {
+      "id": "private-project-identity",
+      "action": "manual_review",
+      "patterns": [
+        "private card filename",
+        "private novel filename",
+        "personal username",
+        "machine-specific project path"
+      ]
+    },
+    {
+      "id": "third-party-source",
+      "action": "manual_review",
+      "patterns": [
+        "copied dialogue",
+        "novel excerpt",
+        "existing IP",
+        "unlicensed tutorial",
+        "referenced preset"
+      ]
+    }
+  ],
+  "contract_sources": {
+    "skill_capability_manifest": "skill-manifest.json",
+    "export_and_redaction_manifest": "public-export-manifest.json",
+    "architecture_document": "PUBLIC_RELEASE_ARCHITECTURE.md"
+  },
+  "dependency_policy": {
+    "authoritative_source": "skill-manifest.json",
+    "frontmatter_dependencies_must_not_contradict": true,
+    "version_policy": "pin_or_bound_every_required_sibling_before_v1",
+    "installer_may_auto_modify_environment": false
+  },
+  "trust_boundary": {
+    "builder_execution_default": "static_only",
+    "explicit_execution_flag": "--execute-builder",
+    "trust_source": [
+      "explicit_cli",
+      "trusted_ci_workspace",
+      "user_global_policy"
+    ],
+    "manifest_may_declare_trust": false,
+    "child_environment": "allowlist_only",
+    "required_controls": [
+      "timeout",
+      "stdin_devnull",
+      "working_directory_isolation",
+      "output_limit"
+    ],
+    "sandbox_claim": "temporary_directory_is_not_a_security_sandbox"
+  },
+  "evidence_levels": [
+    "SPECIFIED",
+    "STATIC_VERIFIED",
+    "INTEGRATION_VERIFIED",
+    "RUNTIME_VERIFIED",
+    "OBSERVED",
+    "CONFORMANCE_VERIFIED"
+  ],
+  "required_release_gates": [
+    "audit_public_release",
+    "audit_docs_links",
+    "doctor_core_capabilities",
+    "pytest_without_unexplained_skips",
+    "public_core_integrity",
+    "synthetic_golden_fixture",
+    "synthetic_golden_project",
+    "license_and_provenance_review",
+    "private_path_and_secret_scan",
+    "export_tree_rebuild_check"
+  ],
+  "planned_artifacts": [
+    "sanitized Core README/SKILL/architecture/notice/sources/changelog",
+    "scripts/audit_docs.py",
+    "scripts/audit_public_release.py",
+    "scripts/doctor.py",
+    "scripts/export_public.py",
+    "tests/test_public_export.py",
+    "tests/test_public_readiness_tools.py",
+    "templates/README.md"
+  ],
+  "current_blockers": [
+    "This RC is Public Release Infrastructure only; Public Authoring Core is not bundled.",
+    "Remote GitHub Actions status is not independently confirmed in the current environment.",
+    "Native stage routing, preset integration, Hermes integration, and SillyTavern runtime remain optional or private overlays."
+  ],
+  "strict_core_policy": {
+    "unknown_provenance": "exclude",
+    "third_party_material": "exclude",
+    "private_overlay_material": "exclude",
+    "license_missing": "block"
+  },
+  "overrides": {
+    "README.md": "release/public-core/README.md",
+    "SKILL.md": "release/public-core/SKILL.md",
+    "PUBLIC_RELEASE_ARCHITECTURE.md": "release/public-core/PUBLIC_RELEASE_ARCHITECTURE.md",
+    "public-export-manifest.json": "release/public-core/public-export-manifest.json",
+    "skill-manifest.json": "release/public-core/skill-manifest.json",
+    ".gitignore": "release/public-core/.gitignore",
+    "SOURCES.md": "release/public-core/SOURCES.md",
+    "NOTICE.md": "release/public-core/NOTICE.md",
+    "CHANGELOG.md": "release/public-core/CHANGELOG.md",
+    "templates/README.md": "release/public-core/templates/README.md",
+    "LICENSE": "release/public-core/LICENSE",
+    "scripts/audit_public_core_integrity.py": "release/public-core/audit_public_core_integrity.py"
+  },
+  "capability_contract": {
+    "authoritative_manifest": "skill-manifest.json",
+    "level_definitions": "skill-manifest.json"
+  }
+}

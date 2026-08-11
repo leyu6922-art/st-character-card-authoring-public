@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "public-review",
+  "release_line": "public-workflow-sanitized",
+  "policy": "default-reject-unless-explicitly-approved",
+  "reviews": [],
+  "excluded_patterns": [
+    "references/cases/**",
+    "references/case-*.md",
+    "docs/superpowers/plans/**",
+    "platform-specific-private-material/**",
+    "private-card-exports/**",
+    "source-text-and-media/**"
+  ],
+  "notes": [
+    "Private case studies, source excerpts, local planning notes, and platform-specific private release material are not part of the public tree.",
+    "The strict public-core export remains governed by public-export-manifest.json and this machine-readable review contract.",
+    "Any future source-derived material requires an explicit redistribution review before inclusion."
+  ]
+}

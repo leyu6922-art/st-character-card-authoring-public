@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "skill-capability",
+  "status": "candidate",
+  "package_version": "0.1.0-public-readiness-core-rc2",
+  "skill_version": "public-core-1",
+  "validator_version": "public-readiness-1",
+  "capability_level": "L1",
+  "dependencies": [],
+  "optional_dependencies": {
+    "native_stage_routing": "not bundled",
+    "preset_debugging": "not bundled",
+    "Hermes": "not required for static Core checks",
+    "SillyTavern": "runtime verification only"
+  },
+  "evidence_levels": [
+    "SPECIFIED",
+    "STATIC_VERIFIED",
+    "INTEGRATION_VERIFIED",
+    "RUNTIME_VERIFIED",
+    "OBSERVED"
+  ],
+  "runtime_verification": "NOT_CONFIGURED",
+  "capabilities": {
+    "core_validation": {
+      "level": "L1",
+      "status": "available"
+    },
+    "release_export": {
+      "level": "L1",
+      "status": "available"
+    },
+    "authoring_workflow": {
+      "level": "L2",
+      "status": "not_bundled"
+    },
+    "native_stage_routing": {
+      "level": "L3",
+      "status": "optional_dependency"
+    },
+    "runtime_stack": {
+      "level": "L4",
+      "status": "not_configured"
+    }
+  },
+  "single_source_policy": {
+    "public_export_scope_and_redaction": "public-export-manifest.json",
+    "capability_level_definitions": "skill-manifest.json"
+  },
+  "capability_level_definitions": {
+    "L1": "Public Core validation and release-integrity infrastructure",
+    "L2": "General SillyTavern authoring workflow; not bundled in strict Public Core",
+    "L3": "Native stage routing via optional sibling capability",
+    "L4": "Full runtime stack via configured host and optional integrations"
+  }
+}

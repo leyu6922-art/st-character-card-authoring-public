@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "driver": "external_extension",
+  "capabilities": [
+    "read_state",
+    "write_state",
+    "recover_state"
+  ],
+  "contract": "runtime-state-contract.json"
+}

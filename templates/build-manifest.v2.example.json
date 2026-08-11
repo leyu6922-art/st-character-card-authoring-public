@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "prototype": "A",
+  "prototype_confidence": "high",
+  "prototype_reason": [
+    "玩家身份、叙事结构和运行驱动已由规划书判定"
+  ],
+  "content_mode": "r18",
+  "routing_mode": "native_greeting_title",
+  "runtime_driver": "native_st",
+  "narrative_mode": "soft_stage",
+  "event_mode": "guided_candidate",
+  "route_policy": "guided",
+  "corpus_mode": "expanded_reference_corpus",
+  "event_policy": "candidate_pool",
+  "transition_policy": "outcome_based",
+  "greeting_mode": "prose_plus_director_appendix",
+  "greeting_appendix_standard": "stage_brief_v1",
+  "require_build": true,
+  "canonical_sources": [
+    "sources/chapter-01.txt"
+  ],
+  "source_coverage_required": true,
+  "source_coverage_minimum": 0.6,
+  "stage_entry_contract": "stage-entry-contract.json",
+  "narrative_contract": "narrative-contract.json",
+  "runtime_state": {
+    "authority": "prompt_record",
+    "update_mode": "model",
+    "contract": "runtime-state-contract.json",
+    "recovery_policy": "latest_valid_record",
+    "reliability": "best_effort"
+  },
+  "runtime_state_verification": {
+    "status": "DECLARED_UNVERIFIED",
+    "artifact": "runtime-state-verification.json"
+  },
+  "player_agency_modes_required": true,
+  "semantic_manifest": null,
+  "trace": {
+    "planned_modules": [
+      "prototype-A",
+      "source-material-workflow",
+      "soft-stage-candidate-events",
+      "runtime-state-best-effort"
+    ],
+    "note": "Trace only. Final gates validate declared artifacts and contracts, not whether an Agent actually read a document."
+  }
+}

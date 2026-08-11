@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "skill-capability",
+  "status": "draft",
+  "skill_name": "st-character-card-authoring",
+  "release_version": "0.1.0-public-readiness-core-rc2",
+  "compatibility": {
+    "python": ">=3.11",
+    "card_formats": [
+      "CCv3"
+    ],
+    "hermes": "not_required_for_public_core",
+    "sillytavern_runtime": "not_claimed_without_runtime_evidence"
+  },
+  "capabilities": {
+    "core_validation": {
+      "level": "L1",
+      "status": "available",
+      "requires": [],
+      "checks": [
+        "manifest",
+        "documentation",
+        "public_artifact",
+        "doctor",
+        "tests"
+      ]
+    },
+    "release_export": {
+      "level": "L1",
+      "status": "available",
+      "requires": [],
+      "checks": [
+        "allowlist",
+        "overrides",
+        "provenance",
+        "review",
+        "trace"
+      ]
+    },
+    "authoring_workflow": {
+      "level": "L2",
+      "status": "not_bundled",
+      "requires": [
+        "hermes-agent"
+      ],
+      "missing_behavior": "NOT_BUNDLED"
+    },
+    "native_stage_routing": {
+      "level": "L3",
+      "status": "optional_dependency",
+      "requires": [
+        "standalone-card-stage-routing"
+      ],
+      "missing_behavior": "MISSING"
+    },
+    "runtime_stack": {
+      "level": "L4",
+      "status": "not_configured",
+      "requires": [
+        "sillytavern",
+        "tavern-helper"
+      ],
+      "missing_behavior": "NOT_CONFIGURED"
+    }
+  },
+  "dependencies": [
+    {
+      "name": "hermes-agent",
+      "kind": "host",
+      "required_for": [
+        "authoring_workflow"
+      ],
+      "version_policy": "document_compatibility_before_v1"
+    },
+    {
+      "name": "standalone-card-stage-routing",
+      "kind": "sibling-skill",
+      "required_for": [
+        "native_stage_routing",
+        "runtime_stack"
+      ],
+      "version_policy": "pin_or_bounded_range_before_v1"
+    },
+    {
+      "name": "sillytavern-preset-debugging",
+      "kind": "sibling-skill",
+      "required_for": [
+        "runtime_stack"
+      ],
+      "version_policy": "pin_or_bounded_range_before_v1"
+    },
+    {
+      "name": "sillytavern",
+      "kind": "runtime",
+      "required_for": [
+        "runtime_stack"
+      ],
+      "version_policy": "runtime_matrix_required"
+    },
+    {
+      "name": "tavern-helper",
+      "kind": "runtime-extension",
+      "required_for": [
+        "runtime_stack"
+      ],
+      "version_policy": "runtime_matrix_required"
+    }
+  ],
+  "profiles": {
+    "ccv3-core": {
+      "kind": "portable_schema_and_type_boundary",
+      "status": "existing"
+    },
+    "st-authoring-recommended": {
+      "kind": "public_neutral_profile",
+      "status": "planned"
+    },
+    "strict-production": {
+      "kind": "portable_strict_quality_profile",
+      "status": "planned"
+    },
+    "leyu-production": {
+      "kind": "deprecated_compatibility_alias",
+      "status": "existing_until_migration_complete"
+    }
+  },
+  "evidence_levels": [
+    "SPECIFIED",
+    "STATIC_VERIFIED",
+    "INTEGRATION_VERIFIED",
+    "RUNTIME_VERIFIED",
+    "OBSERVED",
+    "CONFORMANCE_VERIFIED"
+  ],
+  "single_source_policy": {
+    "capabilities_and_dependencies": "this_file",
+    "public_export_scope_and_redaction": "public-export-manifest.json",
+    "human_explanation": "PUBLIC_RELEASE_ARCHITECTURE.md",
+    "derived_documents_must_be_checked": true,
+    "capability_level_definitions": "this_file"
+  },
+  "capability_level": "L1",
+  "capability_level_definitions": {
+    "L1": "Public Core validation and release-integrity infrastructure",
+    "L2": "General SillyTavern authoring workflow; not bundled in strict Public Core",
+    "L3": "Native stage routing via optional sibling capability",
+    "L4": "Full runtime stack via configured host and optional integrations"
+  }
+}

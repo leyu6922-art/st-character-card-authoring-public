@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "public-export",
+  "status": "candidate",
+  "release_line": "v0.1.0-public-readiness-core-rc2",
+  "public_repository": "st-character-card-authoring",
+  "artifact_policy": {
+    "source_history": "not included",
+    "unknown_provenance": "excluded",
+    "third_party_material": "excluded",
+    "private_overlay": "excluded",
+    "license_required": true
+  },
+  "capability_level": "L1",
+  "optional_capabilities": [
+    "native stage routing",
+    "preset integration",
+    "Hermes integration",
+    "SillyTavern runtime verification"
+  ],
+  "required_release_gates": [
+    "artifact_audit",
+    "docs_audit",
+    "pytest",
+    "doctor_core",
+    "provenance_resolved",
+    "license_present"
+  ],
+  "contract_sources": {
+    "skill_capability_manifest": "skill-manifest.json",
+    "export_and_redaction_manifest": "public-export-manifest.json"
+  },
+  "capability_contract": "skill-manifest.json"
+}
