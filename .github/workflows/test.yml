@@ -14,7 +14,5 @@ jobs:
           python-version: '3.11'
       - name: Install test runner
         run: python -m pip install --upgrade pip pytest
-      - name: Run v5.2 regression suite
-        run: python -m pytest -q
-      - name: Run pipeline wiring audit
-        run: python scripts/audit_skill_pipeline.py --skill-root .
+      - name: Run workflow release gate
+        run: python scripts/release_gate.py --release-candidate --require-external --format text

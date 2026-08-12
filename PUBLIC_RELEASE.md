@@ -33,6 +33,16 @@ The automated checks prove file contracts, schema rules, static routing, workflo
 
 ## Public-release checks
 
+For the complete local release-candidate gate, run:
+
+```bash
+python scripts/release_gate.py --release-candidate --format text
+```
+
+This executes the local gates declared in `public-export-manifest.json`, including the full test suite, documentation audit, compile check, pipeline audit, workflow-provenance validation, private-path/secret scan, complete workflow export rebuild, artifact audit, and nested Strict Core integrity check. The exact-head GitHub Actions gate is external and is verified only by CI with `--require-external`.
+
+The lower-level commands remain useful for diagnosis:
+
 ```bash
 python -m pytest -q
 python scripts/audit_public_release.py --root . --kind source --format text

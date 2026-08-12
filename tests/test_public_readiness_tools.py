@@ -42,6 +42,10 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert export_manifest["release_line"] == "v0.1.0-leyu-opinionated-workflow"
     assert export_manifest["product_kind"] == "opinionated_personal_workflow"
     assert export_manifest["artifact_profile"] == "workflow-distribution"
+    assert export_manifest["artifact_release_line"] == export_manifest["release_line"]
+    assert export_manifest["strict_core_release_line"] == "v0.1.0-public-readiness-core-rc2"
+    assert export_manifest["release_gate_runner"] == "scripts/release_gate.py"
+    assert export_manifest["external_release_gates"] == ["exact_head_github_actions"]
     assert "references/**" in export_manifest["source_scope"]["include"]
     assert "templates/**" in export_manifest["source_scope"]["include"]
     assert "tests/**" in export_manifest["source_scope"]["include"]
@@ -49,6 +53,8 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert "references/**" not in export_manifest["source_scope"]["exclude"]
     assert "templates/**" not in export_manifest["source_scope"]["exclude"]
     assert "workflow-provenance-manifest.json" in export_manifest["source_scope"]["include"]
+    assert export_manifest["artifact_release_line"] == export_manifest["release_line"]
+    assert export_manifest["strict_core_release_line"] != export_manifest["artifact_release_line"]
 
 
 def test_skill_frontmatter_declares_the_host_dependency_without_optional_sibling_claims():

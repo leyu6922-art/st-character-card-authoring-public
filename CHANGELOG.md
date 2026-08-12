@@ -14,3 +14,5 @@
 - Replaced the root Strict Core export/provenance reference with the full workflow export scope and `workflow-provenance-manifest.json`.
 - Moved product boundaries and host-dependent limitations out of `current_blockers`; the current blocker list is now empty.
 - Added regression coverage for profile resolution and fail-closed workflow provenance export.
+- Added `scripts/release_gate.py` as the unified local release-candidate gate and wired GitHub Actions to run it with exact-head verification.
+- Separated the workflow artifact release line from the nested Strict Core release line in the root export contract.

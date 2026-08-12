@@ -197,8 +197,15 @@
   "product_kind": "opinionated_personal_workflow",
   "workflow_profile": "leyu-workflow",
   "artifact_profile": "workflow-distribution",
-  "artifact_release_line": "v0.1.0-public-readiness-core-rc2",
+  "artifact_release_line": "v0.1.0-leyu-opinionated-workflow",
+  "strict_core_release_line": "v0.1.0-public-readiness-core-rc2",
   "strict_core_artifact": "release/public-core/",
+  "strict_core_manifest": "release/public-core/public-export-manifest.json",
+  "strict_core_provenance_manifest": "release/public-core/provenance-manifest.json",
+  "release_gate_runner": "scripts/release_gate.py",
+  "external_release_gates": [
+    "exact_head_github_actions"
+  ],
   "known_boundaries": [
     "This is Leyu's opinionated personal workflow, not an official or universal SillyTavern standard.",
     "The nested release/public-core/ artifact is separately versioned and governed by its own strict Core export and provenance contracts.",

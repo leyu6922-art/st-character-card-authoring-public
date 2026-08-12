@@ -149,11 +149,11 @@
       "review_status": "resolved",
       "source": "workflow implementation or validation tool"
     },
-    "scripts/audit_public_release.py": {
+    "scripts/release_gate.py": {
       "origin": "original",
       "redistribution": "allowed",
       "review_status": "resolved",
-      "source": "workflow implementation or validation tool"
+      "source": "unified workflow release-candidate gate runner"
     },
     "scripts/audit_runtime_state_contract.py": {
       "origin": "original",
@@ -2067,7 +2067,19 @@
       "origin": "original",
       "redistribution": "allowed",
       "review_status": "resolved",
-      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+      "source": "CI workflow invoking the unified release gate"
+    },
+    "tests/test_release_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "regression tests for unified workflow release gate"
+    },
+    "scripts/audit_public_release.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
     }
   }
 }
