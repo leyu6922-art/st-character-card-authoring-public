@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "manifest_kind": "public-review",
-  "release_line": "public-workflow-sanitized",
+  "release_line": "v0.1.0-leyu-opinionated-workflow",
   "policy": "default-reject-unless-explicitly-approved",
   "reviews": [],
   "excluded_patterns": [
@@ -16,5 +16,8 @@
     "Private case studies, source excerpts, local planning notes, and platform-specific private release material are not part of the public tree.",
     "The strict public-core export remains governed by public-export-manifest.json and this machine-readable review contract.",
     "Any future source-derived material requires an explicit redistribution review before inclusion."
-  ]
+  ],
+  "product_kind": "opinionated_personal_workflow",
+  "workflow_profile": "leyu-workflow",
+  "strict_core_review": "release/public-core/ has a separate public-review/provenance contract and is not covered by this workflow review manifest."
 }

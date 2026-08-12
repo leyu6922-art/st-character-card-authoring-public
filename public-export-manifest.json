@@ -14,10 +14,11 @@
   "authoritative_documents": [
     "PUBLIC_RELEASE_ARCHITECTURE.md",
     "skill-manifest.json",
-    "public-export-manifest.json"
+    "public-export-manifest.json",
+    "workflow-provenance-manifest.json"
   ],
   "review_manifest": "release/public-review-manifest.json",
-  "provenance_manifest": "release/public-core/provenance-manifest.json",
+  "provenance_manifest": "workflow-provenance-manifest.json",
   "require_provenance": true,
   "manual_review_policy": {
     "unresolved_action": "fail",
@@ -30,13 +31,25 @@
   },
   "source_scope": {
     "include": [
-      "scripts/audit_docs.py",
-      "scripts/audit_public_release.py",
-      "scripts/doctor.py",
-      "scripts/export_public.py",
-      "tests/test_public_export.py",
-      "tests/test_public_readiness_tools.py",
-      "scripts/audit_public_core_integrity.py"
+      "README.md",
+      "SKILL.md",
+      "PUBLIC_RELEASE.md",
+      "PUBLIC_RELEASE_ARCHITECTURE.md",
+      "SOURCES.md",
+      "SECURITY.md",
+      "LICENSE",
+      "CHANGELOG.md",
+      ".gitignore",
+      ".gitattributes",
+      "skill-manifest.json",
+      "public-export-manifest.json",
+      "release/public-review-manifest.json",
+      "workflow-provenance-manifest.json",
+      "scripts/**",
+      "references/**",
+      "templates/**",
+      "tests/**",
+      ".github/workflows/**"
     ],
     "exclude": [
       ".git/**",
@@ -51,19 +64,14 @@
       "**/_maintenance_backups/**",
       "build/**",
       "reports/**",
-      "release/**",
+      "release/public-core/**",
       "dist/**",
-      "references/**",
-      "templates/**",
-      "docs/**",
-      "profiles/**",
-      "examples/**",
-      "project-template/**",
-      "conformance/**",
       "*.env",
       ".env*",
-      "**/*token*",
-      "**/*credential*"
+      "**/*credential*",
+      "private-card-exports/**",
+      "source-text-and-media/**",
+      "private-credentials/**"
     ],
     "manual_review": []
   },
@@ -115,7 +123,8 @@
   "contract_sources": {
     "skill_capability_manifest": "skill-manifest.json",
     "export_and_redaction_manifest": "public-export-manifest.json",
-    "architecture_document": "PUBLIC_RELEASE_ARCHITECTURE.md"
+    "architecture_document": "PUBLIC_RELEASE_ARCHITECTURE.md",
+    "workflow_provenance_manifest": "workflow-provenance-manifest.json"
   },
   "dependency_policy": {
     "authoritative_source": "skill-manifest.json",
@@ -152,58 +161,54 @@
   "required_release_gates": [
     "audit_public_release",
     "audit_docs_links",
-    "doctor_core_capabilities",
-    "pytest_without_unexplained_skips",
-    "public_core_integrity",
-    "synthetic_golden_fixture",
-    "synthetic_golden_project",
-    "license_and_provenance_review",
+    "full_pytest",
+    "pipeline_static_audit",
+    "compileall",
+    "workflow_provenance_resolved",
     "private_path_and_secret_scan",
-    "export_tree_rebuild_check"
+    "export_tree_rebuild_check",
+    "exact_head_github_actions",
+    "nested_public_core_reference_integrity"
   ],
   "planned_artifacts": [
-    "sanitized Core README/SKILL/architecture/notice/sources/changelog",
-    "scripts/audit_docs.py",
-    "scripts/audit_public_release.py",
-    "scripts/doctor.py",
-    "scripts/export_public.py",
-    "tests/test_public_export.py",
-    "tests/test_public_readiness_tools.py",
-    "templates/README.md"
+    "README.md",
+    "SKILL.md",
+    "PUBLIC_RELEASE.md",
+    "PUBLIC_RELEASE_ARCHITECTURE.md",
+    "SOURCES.md",
+    "SECURITY.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "skill-manifest.json",
+    "public-export-manifest.json",
+    "release/public-review-manifest.json",
+    "scripts/**",
+    "references/**",
+    "templates/**",
+    "tests/**",
+    ".github/workflows/**"
   ],
-  "current_blockers": [
-    "The bundled authoring workflow is opinionated and personal; it is not presented as an official or universal SillyTavern standard.",
-    "The nested release/public-core/RC2 remains a separately versioned strict Core artifact and is not the version identity of this workflow repository.",
-    "Remote GitHub Actions status is not independently confirmed in the current environment.",
-    "Native stage routing, preset integration, Hermes integration, and SillyTavern runtime remain optional or host-dependent capabilities."
-  ],
-  "strict_core_policy": {
-    "unknown_provenance": "exclude",
-    "third_party_material": "exclude",
-    "private_overlay_material": "exclude",
-    "license_missing": "block"
-  },
-  "overrides": {
-    "README.md": "release/public-core/README.md",
-    "SKILL.md": "release/public-core/SKILL.md",
-    "PUBLIC_RELEASE_ARCHITECTURE.md": "release/public-core/PUBLIC_RELEASE_ARCHITECTURE.md",
-    "public-export-manifest.json": "release/public-core/public-export-manifest.json",
-    "skill-manifest.json": "release/public-core/skill-manifest.json",
-    ".gitignore": "release/public-core/.gitignore",
-    "SOURCES.md": "release/public-core/SOURCES.md",
-    "NOTICE.md": "release/public-core/NOTICE.md",
-    "CHANGELOG.md": "release/public-core/CHANGELOG.md",
-    "templates/README.md": "release/public-core/templates/README.md",
-    "LICENSE": "release/public-core/LICENSE",
-    "scripts/audit_public_core_integrity.py": "release/public-core/audit_public_core_integrity.py"
-  },
+  "current_blockers": [],
+  "overrides": {},
   "capability_contract": {
     "authoritative_manifest": "skill-manifest.json",
     "level_definitions": "skill-manifest.json"
   },
   "product_kind": "opinionated_personal_workflow",
   "workflow_profile": "leyu-workflow",
-  "artifact_profile": "strict-public-core",
+  "artifact_profile": "workflow-distribution",
   "artifact_release_line": "v0.1.0-public-readiness-core-rc2",
-  "strict_core_artifact": "release/public-core/"
+  "strict_core_artifact": "release/public-core/",
+  "known_boundaries": [
+    "This is Leyu's opinionated personal workflow, not an official or universal SillyTavern standard.",
+    "The nested release/public-core/ artifact is separately versioned and governed by its own strict Core export and provenance contracts.",
+    "Native stage routing, preset integration, and SillyTavern runtime remain optional or host-dependent capabilities.",
+    "Remote GitHub Actions is evidence for the pushed commit; local and remote test counts are reported separately."
+  ],
+  "known_limitations": [
+    "Static and integration checks do not prove SillyTavern import behavior, model quality, UI rendering, or runtime behavior.",
+    "Optional sibling skills and runtime hosts are not bundled by the workflow distribution."
+  ],
+  "strict_core_manifest": "release/public-core/public-export-manifest.json",
+  "strict_core_provenance_manifest": "release/public-core/provenance-manifest.json"
 }

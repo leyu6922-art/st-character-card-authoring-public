@@ -1,0 +1,2073 @@
+{
+  "schema_version": 1,
+  "manifest_kind": "provenance",
+  "release_line": "v0.1.0-leyu-opinionated-workflow",
+  "product_kind": "opinionated_personal_workflow",
+  "policy": "Only original, neutral, or explicitly reviewed public workflow material is resolved; private/source-derived/unknown material is excluded.",
+  "files": {
+    "README.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "SKILL.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "PUBLIC_RELEASE.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "PUBLIC_RELEASE_ARCHITECTURE.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "SOURCES.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "SECURITY.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "LICENSE": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "CHANGELOG.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    ".gitignore": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    ".gitattributes": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "skill-manifest.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "public-export-manifest.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "release/public-review-manifest.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "Leyu public workflow distribution"
+    },
+    "scripts/analyze_token_load.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/atomic_write_json.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_candidate_event_semantics.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_docs.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_greeting_build_wiring.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_greeting_layers.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_manifest_alignment.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_open_sandbox_entries.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_ordered_step_contract.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_player_agency_modes.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_public_core_integrity.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_public_release.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_runtime_state_contract.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_semantic_modules.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_semantic_text.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_skill_pipeline.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_source_material_coverage.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_stage_entry_contracts.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_stage_transition_policy.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/audit_worldbook_triggers.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/check_build_sync.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/doctor.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/enrichment_self_check.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/export_public.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/final_delivery_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/fix_card_format.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/migrate_card.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/run_delivery.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/safe_write_card.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/simulate_freeplay_paths.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/validate_card.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/verify_enrichment_pass.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/verify_simple_stage_route.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/worldbook-json-converter.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/card_issues.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/narrative_contracts.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/stage_memory.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/stage_routing.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/validation_profiles.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/worldbook_matcher.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "scripts/lib/__init__.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "workflow implementation or validation tool"
+    },
+    "references/card-audit-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/card-audit-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/card-cross-verification-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/card-governance-report-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/directory-map.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/directory-structure-map.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/directory-structure.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/dual-route-architecture.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/enhancement-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/execute_code-string-escaping.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/execute_code-tmp-contamination.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/expansion-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/g-type-chinese-card-build-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/g-type-repair-audit-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/game-mechanics-template-library.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/gameplay-type-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/greeting-truncation-recovery.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/greetings-from-file-assembly.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/guardian-card-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/md-to-json-assembly.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/multi-chapter-novel-to-card.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/multi-reference-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/novel-archetype-patterns.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/novel-to-card-sizing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl-perspective-conversion.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl-transformation-framework.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl-version-audit-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntr-multi-target-weight-distribution.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/open-ended-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/phase-memory-gate-architecture.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/pitfall-library.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/pitfalls-card-building.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/planning-readiness-evaluation.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/quality-check-instruction-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/recursive-trigger-chain.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/relationship-matrix-document-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/sillytavern-scripting-patterns.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/sp-database-plugin-compatibility.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-native-charcard-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-native-worldbook-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-reasoning-parser-and-png-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-reasoning-parser-behavior.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-reasoning-parser-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-regex-placement-analysis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-truncation-diagnosis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/template-evaluation-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/token-audit-methodology.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/token-optimization-selective-triggers.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/truncation-diagnosis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/unicode-encoding-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/v3-extensions-field-list.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/worldbook-cleanup-and-sync.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/worldbook-entry-structure.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/worldbook-json-converter.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/card-audit-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/card-audit-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/card-cross-verification-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/card-governance-report-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/card-quality-assessment.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/character-card-audit-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/content-contradiction-checks.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/cross-window-skill-governance-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-delivery-gate-default-policy-2026-07-16.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-delivery-gate-doc-consistency-scan.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-delivery-gate-engineering-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-delivery-gate-independent-review-2026-07-16.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-delivery-gate-review-2026-07-16.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/final-flow-integration-2026-07-15.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/full-process-skill-audit-2026-07-15-efg.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/full-process-skill-audit-findings.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/gpt-audit-repair-loop.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/gtype-post-model-audit-repair-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/hero-name-verification-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/NTL变体审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/NTR苦主卡审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/quality-check-instruction-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/review-template-system.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/skill-maintenance-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/v2-repair-verification-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/validate-checklist-detail.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/worldbook-trigger-reachability-audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/_README.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/世界书触发专项审查模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/修卡审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/初始卡审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/守护卡审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/禁忌后宫征服卡审查启动模板.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_code_residue.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_code_residue_delivery_gate_report.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_code_residue_worldbook_trigger_audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_greeting_one_paragraph.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_greeting_truncated.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_g_type_identity_locked.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_ntr_relation_thin.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_r18_empty_shell.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_xuankai_keys_nonempty.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_basic_card.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_g_normal_event_no_threepath.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_g_type_xuankai_card.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_r18_rich_terms.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/hard_term_card_synced_worldbook_trigger_audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_build_unsynced/assemble_card.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_build_unsynced/bad_build_unsynced.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/bad_build_unsynced/build/all_entries.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_build_nested/good_build_nested.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_build_nested/build/all_entries.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/audit/fixtures/good_build_nested/build/assemble_card.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/an-single-authority-stage-routing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/character-matrix-extraction.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/female-lead-size-perception-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/g-type-toggle-and-natural-trigger-contract.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/gameplay-type-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/greeting-director-appendix-standard.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/guardian-card-archetype.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/hidden-ntl-composite.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/hidden-ntr-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/high-density-content-formats.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/logical-firewall.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/manual-toggle-identity-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/material-pack-entry-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/multi-perspective-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/native-stage-trigger-card-architecture.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/no-variable-route-marker-audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/npc-behavioral-independence.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/npc-information-boundary.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/open-ended-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/persona-contradiction-modeling.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/personality-encoding.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/preset-auto-route-stage-routing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/preset-friendly-statebar-routing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/progressive-worldbook-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/recommended-preset-simple-stage-routing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/recursive-trigger-chain.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/reference-card-analysis-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/scp2599-production-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/scp2599-rule-driven-card.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/semantic-modular-open-card-architecture.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/st-worldbook-triggering-behavior.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/stage-adult-material-enrichment-packs.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/story-director-protocol.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/structured-card-run-validation.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/structured-item-system.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/token-optimization-selective-triggers.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/design-patterns/user-perspective-narration.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/dual-route-architecture.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/json-assembly-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/md-to-json-assembly.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/merge-duplicate-entries.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/semantic-module-text-style.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/st-native-charcard-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/st-native-worldbook-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/wb-entry-json-schema.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/worldbook-cleanup-and-sync.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/formats/worldbook-entry-structure.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/greetings-from-file-assembly.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/pitfall-library.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/pitfall-t58-execute-code-thinning.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/pitfall-t61-t64.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/pitfall-t76-t79-token-repair.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/pitfall-t86-t89-assembly-and-nsfw.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/misc/sub-agent-json-build-patterns.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/guardian-transformation-framework.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-conquest-card-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-netori-framework.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-perspective-conversion.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-recovery-route-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-variant-audit-extras.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-variant-card-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-variant-templates.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntl-version-audit-checklist.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntr-multi-target-weight-distribution.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/ntl/ntr-relationship-matrix.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/pitfalls/enrichment-false-positives.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/card-vs-runtime-boundary.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/execute_code-string-escaping.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/execute_code-tmp-contamination.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/sillytavern-scripting-patterns.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/sp-database-plugin-compatibility.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/st-reasoning-parser-and-png-format.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/st-reasoning-parser-behavior.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/st-reasoning-parser-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/st-regex-placement-analysis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/st-truncation-diagnosis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/trigger-quality-vs-token-load.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/truncation-diagnosis.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/unicode-encoding-pitfalls.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/st-technical/worldbook-position-depth-guide.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/analysis-document-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/card-assembly-and-delivery-pipeline.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/card-comparison-review.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/card-production-lessons-2026-07-15-16.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/card-repair-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/chinese-novel-character-extraction.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/content-file-first-build-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/controlled-enrichment-pass.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/cross-window-fix-verification.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/e-type-harem-conquest-card-build.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/enhancement-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/expansion-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/final-delivery-gate-lessons-2026-07-16.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/full-rebuild-after-trigger-audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/iterative-enrichment-gate-repair.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/lightweight-summary-deep-profile-trigger-pattern.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/manifest-driven-delivery.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/multi-chapter-novel-to-card.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/multi-reference-card-design.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/novel-collection-split-pattern.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/novel-full-extraction-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/novel-preprocessing-verification.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/novel-to-card-sizing.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/parallel-large-card-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/parallel-subagent-card-modification.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/planning-readiness-evaluation.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/pre-prototype-novel-triage.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/preset-route-state-integration.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/progressive-card-versioned-repair.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/r18-content-runtime-audit.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/section-markers-organization.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/seven-phase-build-ordering.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/source-first-material-and-player-agency-contract.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/stage-entry-contract-gate.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/template-evaluation-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/trigger-fix-test-to-official-release.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/triple-validation-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/v2-repair-protocol.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/v5.2-validation-and-migration.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/variant-card-production-lessons.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "references/workflows/variant-card-production-workflow.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/build-manifest.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/build-manifest.open-sandbox.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/build-manifest.v2.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/external-extension-contract.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/narrative-contract.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/narrative-contract.open-situation-seed.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/plan-document-template.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/player-agency-modes.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/runtime-state-contract.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/runtime-state-verification.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-character-identity-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-character-language-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-character-psychology-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-interaction-mechanism-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-module-manifest.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-place-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/semantic-relationship-v1.md": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "templates/stage-entry-contract.example.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/conftest.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_audit_skill_pipeline_source_coverage.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_audit_worldbook_entry_roles.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_build_sync.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_candidate_event_semantics.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_capabilities.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_ccv3_profiles.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_delivery_cli_integration.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_delivery_workflow_readability.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_enrichment_player_agency_modes.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_final_delivery_player_agency_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_final_delivery_source_coverage_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_greeting_build_wiring.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_greeting_layers.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_g_type_toggle_natural_trigger_contract.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_manifest_delivery_and_rule_consistency.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_material_contracts.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_menu_html_opening_regressions.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_migration_and_writer.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_narrative_contracts.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_narrative_contract_hardening.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_narrative_mode_audits.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_narrative_runner_integration.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_native_stage_manifest_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_pipeline_audit.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_player_agency_modes.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_public_export.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_public_readiness_tools.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_runtime_state_contract.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_semantic_module_pipeline.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_semantic_text.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_source_coverage_policy.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_source_material_coverage.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_stage_entry_contracts.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_stage_memory_gate.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_stage_routing_docs.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_stage_routing_regressions.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_token_analyzer.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_validate_player_agency_feature_toggles.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/test_worldbook_matcher.py": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/fixtures/invalid_ccv3_missing_data_field.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/fixtures/valid_ccv3_core_minimal.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    "tests/fixtures/valid_leyu_manual_toggle.json": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    },
+    ".github/workflows/test.yml": {
+      "origin": "original",
+      "redistribution": "allowed",
+      "review_status": "resolved",
+      "source": "neutral workflow documentation, template, fixture, test, or CI definition"
+    }
+  }
+}

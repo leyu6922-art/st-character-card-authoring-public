@@ -262,14 +262,32 @@ def export_tree(
 
         if manual_review and run_audit:
             errors.extend(f"MANUAL_REVIEW_UNRESOLVED: {rel}" for rel in manual_review)
+        provenance_raw = manifest.get("provenance_manifest")
+        provenance_source: Path | None = None
+        provenance_path: Path | None = None
+        provenance_rel: str | None = None
+        if provenance_raw:
+            provenance_source = (source / str(provenance_raw)).resolve()
+            try:
+                provenance_rel = provenance_source.relative_to(source).as_posix()
+            except ValueError as exc:
+                raise ValueError("provenance manifest must remain inside the source tree") from exc
+            if not provenance_source.is_file():
+                errors.append(f"PROVENANCE_SOURCE_MISSING: {provenance_rel}")
+            elif provenance_rel not in copied:
+                errors.append(f"PROVENANCE_NOT_EXPORTED: {provenance_rel}")
+            elif not dry_run:
+                staged_provenance = copy_root / provenance_rel
+                if not staged_provenance.is_file():
+                    errors.append(f"PROVENANCE_NOT_STAGED: {provenance_rel}")
+                else:
+                    provenance_path = staged_provenance
         audit: dict[str, Any] | None = None
         if not dry_run and run_audit and not errors:
             try:
                 from .audit_public_release import audit_tree
             except ImportError:
                 from audit_public_release import audit_tree
-            provenance_raw = manifest.get("provenance_manifest")
-            provenance_path = (manifest_path.parent / str(provenance_raw)).resolve() if provenance_raw else None
             audit = audit_tree(
                 copy_root,
                 provenance_manifest=provenance_path,

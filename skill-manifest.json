@@ -131,8 +131,18 @@
       "status": "planned"
     },
     "leyu-production": {
-      "kind": "deprecated_compatibility_alias",
-      "status": "existing_until_migration_complete"
+      "kind": "validation_profile",
+      "status": "existing",
+      "scope": "validator and delivery quality profile used by validate_card.py and production gates",
+      "compatibility_note": "This is a validation profile, not an alias for the leyu-workflow distribution profile."
+    },
+    "leyu-workflow": {
+      "kind": "opinionated_personal_workflow",
+      "status": "existing",
+      "default_for": [
+        "authoring_workflow"
+      ],
+      "scope": "bundled workflow profile for Leyu personal authoring process"
     }
   },
   "evidence_levels": [
@@ -148,7 +158,8 @@
     "public_export_scope_and_redaction": "public-export-manifest.json",
     "human_explanation": "PUBLIC_RELEASE_ARCHITECTURE.md",
     "derived_documents_must_be_checked": true,
-    "capability_level_definitions": "this_file"
+    "capability_level_definitions": "this_file",
+    "workflow_provenance": "workflow-provenance-manifest.json"
   },
   "capability_level": "L2",
   "capability_level_definitions": {

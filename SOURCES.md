@@ -11,4 +11,4 @@ It intentionally excludes:
 
 The MIT License in `LICENSE` applies to original project material only. It does not grant rights to external novels, characters, presets, tutorials, images, or other intellectual property referenced by a user's private project. Review ownership and platform rules before using the workflow with external material.
 
-The root manifests describe the opinionated workflow distribution. The manifests under `release/public-core/` describe a stricter, separately versioned Public Core artifact boundary. Optional sibling skills and real SillyTavern runtime integrations are not bundled by that Core candidate.
+The root `public-export-manifest.json` and `workflow-provenance-manifest.json` describe the complete opinionated workflow distribution. The manifests under `release/public-core/` describe a stricter, separately versioned Public Core artifact boundary. Optional sibling skills and real SillyTavern runtime integrations are not bundled by that Core candidate.

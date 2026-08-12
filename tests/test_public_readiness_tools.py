@@ -18,6 +18,13 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert skill_manifest["release_version"] == "0.1.0-leyu-opinionated-workflow"
     assert skill_manifest["capability_level"] == "L2"
     assert skill_manifest["distribution"]["profile"] == "leyu-workflow"
+    profiles = skill_manifest["profiles"]
+    assert profiles["leyu-workflow"]["kind"] == "opinionated_personal_workflow"
+    assert profiles["leyu-workflow"]["status"] == "existing"
+    assert "authoring_workflow" in profiles["leyu-workflow"]["default_for"]
+    assert profiles["leyu-production"]["kind"] == "validation_profile"
+    assert profiles["leyu-production"]["status"] == "existing"
+    assert "alias_of" not in profiles["leyu-production"]
     capabilities = skill_manifest["capabilities"]
     assert isinstance(capabilities, dict)
     assert capabilities["core_validation"]["level"] == "L1"
@@ -34,6 +41,14 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert export_manifest["public_repository"] == "st-character-card-authoring-public"
     assert export_manifest["release_line"] == "v0.1.0-leyu-opinionated-workflow"
     assert export_manifest["product_kind"] == "opinionated_personal_workflow"
+    assert export_manifest["artifact_profile"] == "workflow-distribution"
+    assert "references/**" in export_manifest["source_scope"]["include"]
+    assert "templates/**" in export_manifest["source_scope"]["include"]
+    assert "tests/**" in export_manifest["source_scope"]["include"]
+    assert "release/public-core/**" in export_manifest["source_scope"]["exclude"]
+    assert "references/**" not in export_manifest["source_scope"]["exclude"]
+    assert "templates/**" not in export_manifest["source_scope"]["exclude"]
+    assert "workflow-provenance-manifest.json" in export_manifest["source_scope"]["include"]
 
 
 def test_skill_frontmatter_declares_the_host_dependency_without_optional_sibling_claims():

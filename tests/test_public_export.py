@@ -6,6 +6,9 @@ import pytest
 from scripts.export_public import export_tree
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
 def write_manifest(path: Path) -> None:
     path.write_text(
         json.dumps(
@@ -239,6 +242,39 @@ def test_export_tree_dry_run_does_not_write_destination(tmp_path):
     assert result["errors"] == []
     assert result["copied"] == ["SKILL.md"]
     assert not destination.exists()
+
+
+def test_export_requires_the_declared_provenance_manifest_to_be_exported(tmp_path):
+    source = tmp_path / "source"
+    destination = tmp_path / "public"
+    source.mkdir()
+    (source / "SKILL.md").write_text("public skill\n", encoding="utf-8")
+    (source / "workflow-provenance-manifest.json").write_text(json.dumps({
+        "manifest_kind": "provenance", "files": {}
+    }), encoding="utf-8")
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(json.dumps({
+        "manifest_kind": "public-export",
+        "provenance_manifest": "workflow-provenance-manifest.json",
+        "source_scope": {"include": ["SKILL.md"], "exclude": [], "manual_review": []},
+    }), encoding="utf-8")
+
+    result = export_tree(source, destination, manifest, run_audit=False)
+
+    assert any("PROVENANCE_NOT_EXPORTED" in item for item in result["errors"])
+    assert not destination.exists()
+
+
+def test_root_workflow_contract_uses_a_distinct_provenance_manifest():
+    export_manifest = json.loads((ROOT / "public-export-manifest.json").read_text(encoding="utf-8"))
+    provenance = json.loads((ROOT / "workflow-provenance-manifest.json").read_text(encoding="utf-8"))
+    assert export_manifest["manifest_kind"] == "public-export"
+    assert export_manifest["provenance_manifest"] == "workflow-provenance-manifest.json"
+    assert export_manifest["current_blockers"] == []
+    assert export_manifest["known_boundaries"]
+    assert provenance["release_line"] == "v0.1.0-leyu-opinionated-workflow"
+    assert provenance["product_kind"] == "opinionated_personal_workflow"
+    assert "release/public-core/provenance-manifest.json" not in export_manifest["provenance_manifest"]
 
 
 def test_export_tree_rejects_destination_inside_source(tmp_path):

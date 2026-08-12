@@ -9,7 +9,7 @@
 2. The workflow includes personal preferences, production heuristics, design patterns, validation scripts, templates, references, and delivery gates; it does not claim to be a universal standard.
 3. `release/public-core/` is a narrower, separately versioned strict Core candidate. Its RC2 identity must not be confused with the parent workflow release.
 4. The original private production repository remains private.
-5. `skill-manifest.json` is the authoritative capability, dependency, profile, and workflow-version contract. `public-export-manifest.json` is the authoritative public boundary, redaction, and fresh-history contract. README tables, `doctor.py`, CI, and installers must derive from these files or be checked against them.
+5. `skill-manifest.json` is the authoritative capability, dependency, profile, and workflow-version contract. `public-export-manifest.json` is the authoritative workflow-distribution boundary and fresh-history contract; `workflow-provenance-manifest.json` is its provenance contract. The nested `release/public-core/` product has separate contracts. README tables, `doctor.py`, CI, and installers must derive from these files or be checked against them.
 6. Trust is external to the project being checked. A project manifest must never be able to declare itself trusted.
 
 ## 1. Goals and non-goals
@@ -78,10 +78,12 @@ A missing optional capability must produce `MISSING` or `NOT_CONFIGURED`, never 
 
 `public-export-manifest.json` is the single source for:
 
-- public file scope and excluded material;
-- redaction and provenance review rules;
+- public file scope and excluded material for the Leyu workflow distribution;
+- redaction and workflow-provenance review rules;
 - fresh-history export policy;
 - required public-release gates.
+
+`workflow-provenance-manifest.json` resolves the provenance of the bundled workflow distribution. It is separate from `release/public-core/provenance-manifest.json`, which covers only the nested strict Core artifact.
 
 `SKILL.md` remains the Hermes authoring adapter. It should explain how to use the contracts, not silently become a second dependency or release manifest. CI must detect drift between the manifests and derived documentation.
 

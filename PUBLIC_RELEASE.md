@@ -29,7 +29,7 @@ Some design patterns discuss NTR/NTL, adult themes, coercion, or other sensitive
 
 ## Evidence boundary
 
-The automated checks prove file contracts, schema rules, static routing, and release hygiene. They do not prove SillyTavern import behavior, model quality, UI rendering, or runtime behavior. See `SKILL.md` and the release manifests for the exact boundary.
+The automated checks prove file contracts, schema rules, static routing, workflow provenance, and release hygiene. The root workflow export is governed by `public-export-manifest.json` plus `workflow-provenance-manifest.json`; the nested strict Core has separate contracts under `release/public-core/`. These checks do not prove SillyTavern import behavior, model quality, UI rendering, or runtime behavior.
 
 ## Public-release checks
 
@@ -39,4 +39,4 @@ python scripts/audit_public_release.py --root . --kind source --format text
 python scripts/audit_public_core_integrity.py --skill-root . --format text
 ```
 
-Before changing repository visibility, create a fresh-history public artifact and verify the artifact itself. A sanitized working tree does not erase sensitive content from old Git commits.
+Before each tagged release or regenerated public distribution, rebuild and verify the fresh-history artifact itself. A sanitized working tree does not erase sensitive content from old Git commits.

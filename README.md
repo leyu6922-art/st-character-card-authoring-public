@@ -25,6 +25,7 @@
 ## 依赖边界
 
 - `scripts/`、`references/`、`templates/` 和测试可作为本地工作流使用。
+- 根级公开分发由 `public-export-manifest.json` 管理，完整工作流文件的来源边界由 `workflow-provenance-manifest.json` 解析；`release/public-core/` 有独立的 Strict Core 合同。
 - 在 Hermes Agent 中作为 Skill 触发和执行时，需要 Hermes Agent 主机。
 - `standalone-card-stage-routing`、`sillytavern-preset-debugging` 等是可选 sibling 能力，不是基础工作流的隐式依赖。
 - SillyTavern、Tavern Helper 和真实宿主运行时不随仓库打包，也不由静态测试代替。
