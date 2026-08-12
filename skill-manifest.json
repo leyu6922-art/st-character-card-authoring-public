@@ -3,7 +3,7 @@
   "manifest_kind": "skill-capability",
   "status": "candidate",
   "skill_name": "st-character-card-authoring",
-  "release_version": "0.1.0-leyu-opinionated-workflow",
+  "release_version": "0.1.0",
   "compatibility": {
     "python": ">=3.11",
     "card_formats": [

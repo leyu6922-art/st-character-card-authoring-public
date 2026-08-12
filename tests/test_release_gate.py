@@ -27,3 +27,12 @@ def test_release_gate_version_split_is_machine_checked():
     assert manifest["artifact_release_line"] == manifest["release_line"]
     assert manifest["strict_core_release_line"] != manifest["artifact_release_line"]
     assert manifest["release_gate_runner"] == "scripts/release_gate.py"
+
+
+def test_release_gate_rejects_duplicate_manifest_keys(tmp_path):
+    (tmp_path / "public-export-manifest.json").write_text(
+        '{"manifest_kind":"public-export","manifest_kind":"public-export"}',
+        encoding="utf-8",
+    )
+    result = evaluate_manifest_contract(tmp_path)
+    assert any("duplicate JSON key: manifest_kind" in error for error in result["errors"])

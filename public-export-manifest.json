@@ -2,7 +2,7 @@
   "schema_version": 1,
   "manifest_kind": "public-export",
   "status": "candidate-opinionated-workflow",
-  "release_line": "v0.1.0-leyu-opinionated-workflow",
+  "release_line": "v0.1.0",
   "public_repository": "st-character-card-authoring-public",
   "history_policy": {
     "mode": "fresh_history",
@@ -197,7 +197,7 @@
   "product_kind": "opinionated_personal_workflow",
   "workflow_profile": "leyu-workflow",
   "artifact_profile": "workflow-distribution",
-  "artifact_release_line": "v0.1.0-leyu-opinionated-workflow",
+  "artifact_release_line": "v0.1.0",
   "strict_core_release_line": "v0.1.0-public-readiness-core-rc2",
   "strict_core_artifact": "release/public-core/",
   "strict_core_manifest": "release/public-core/public-export-manifest.json",
@@ -215,7 +215,5 @@
   "known_limitations": [
     "Static and integration checks do not prove SillyTavern import behavior, model quality, UI rendering, or runtime behavior.",
     "Optional sibling skills and runtime hosts are not bundled by the workflow distribution."
-  ],
-  "strict_core_manifest": "release/public-core/public-export-manifest.json",
-  "strict_core_provenance_manifest": "release/public-core/provenance-manifest.json"
+  ]
 }

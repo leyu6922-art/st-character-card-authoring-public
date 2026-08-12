@@ -20,7 +20,7 @@
 
 其中的判断和门槛代表 Leyu 的实践偏好，不是 SillyTavern 官方规范。你可以直接采用，也可以 Fork 后替换成自己的规则。`release/public-core/` 下的 RC2 文件是独立、较窄的 Public Core 候选工件；它不代表本仓库完整工作流的产品定位或版本号。
 
-**当前发行版本：** `0.1.0-leyu-opinionated-workflow`
+**当前发行版本：** `0.1.0`
 
 ## 依赖边界
 

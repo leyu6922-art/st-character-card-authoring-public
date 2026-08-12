@@ -272,7 +272,7 @@ def test_root_workflow_contract_uses_a_distinct_provenance_manifest():
     assert export_manifest["provenance_manifest"] == "workflow-provenance-manifest.json"
     assert export_manifest["current_blockers"] == []
     assert export_manifest["known_boundaries"]
-    assert provenance["release_line"] == "v0.1.0-leyu-opinionated-workflow"
+    assert provenance["release_line"] == "v0.1.0"
     assert provenance["product_kind"] == "opinionated_personal_workflow"
     assert "release/public-core/provenance-manifest.json" not in export_manifest["provenance_manifest"]
     assert export_manifest["artifact_release_line"] == export_manifest["release_line"]

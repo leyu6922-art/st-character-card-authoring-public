@@ -1,6 +1,6 @@
 # Public Release Architecture
 
-> Status: **CANDIDATE / v0.1.0-leyu-opinionated-workflow**
+> Status: **CANDIDATE / v0.1.0**
 > This document defines the public distribution of Leyu's opinionated authoring workflow. It is an architecture contract, not a promise that every runtime behavior is already verified. The nested `release/public-core/` directory remains a separately versioned strict Core artifact.
 
 ## 0. Decisions

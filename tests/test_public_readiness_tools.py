@@ -15,7 +15,7 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert export_manifest["contract_sources"]["skill_capability_manifest"] == "skill-manifest.json"
     assert skill_manifest["single_source_policy"]["public_export_scope_and_redaction"] == "public-export-manifest.json"
     assert skill_manifest["status"] == "candidate"
-    assert skill_manifest["release_version"] == "0.1.0-leyu-opinionated-workflow"
+    assert skill_manifest["release_version"] == "0.1.0"
     assert skill_manifest["capability_level"] == "L2"
     assert skill_manifest["distribution"]["profile"] == "leyu-workflow"
     profiles = skill_manifest["profiles"]
@@ -39,7 +39,7 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
     assert capabilities["runtime_stack"]["status"] == "not_configured"
     export_manifest = json.loads((ROOT / "public-export-manifest.json").read_text(encoding="utf-8"))
     assert export_manifest["public_repository"] == "st-character-card-authoring-public"
-    assert export_manifest["release_line"] == "v0.1.0-leyu-opinionated-workflow"
+    assert export_manifest["release_line"] == "v0.1.0"
     assert export_manifest["product_kind"] == "opinionated_personal_workflow"
     assert export_manifest["artifact_profile"] == "workflow-distribution"
     assert export_manifest["artifact_release_line"] == export_manifest["release_line"]
@@ -60,7 +60,7 @@ def test_public_contract_manifests_parse_and_point_to_each_other():
 def test_skill_frontmatter_declares_the_host_dependency_without_optional_sibling_claims():
     text = (ROOT / "SKILL.md").read_text(encoding="utf-8")
     frontmatter = text.split("---", 2)[1]
-    assert "version: '0.1.0-leyu-opinionated-workflow'" in frontmatter
+    assert "version: '0.1.0'" in frontmatter
     assert "dependencies:" in frontmatter
     assert "- hermes-agent" in frontmatter
     assert "dependencies: []" not in frontmatter

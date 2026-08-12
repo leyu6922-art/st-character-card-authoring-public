@@ -1,7 +1,7 @@
 ---
 name: st-character-card-authoring
 description: 'Leyu 的 opinionated SillyTavern 角色卡创作工作流。基于小说生成角色卡JSON，内嵌完整世界书，导入即自动链接。覆盖世界观/角色/规则/状态栏/开场白/剧情/文风全流程，并包含构建、审查和交付门控。它是个人实践发行版，不是官方或唯一标准。支持七种原型：恶堕卡(NTR)、守护卡(反NTR)、NTL征服者卡、守护觉醒卡、禁忌后宫征服卡、叙事观察卡(上帝视角)、多视角内置卡(G型)。大型卡用write_file+terminal+并行子代理批量组装。'
-version: '0.1.0-leyu-opinionated-workflow'
+version: '0.1.0'
 category: 'creative/sillytavern-content-authoring'
 triggers:
   - '帮我写卡'

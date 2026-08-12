@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "manifest_kind": "public-review",
-  "release_line": "v0.1.0-leyu-opinionated-workflow",
+  "release_line": "v0.1.0",
   "policy": "default-reject-unless-explicitly-approved",
   "reviews": [],
   "excluded_patterns": [

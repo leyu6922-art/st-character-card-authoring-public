@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "manifest_kind": "provenance",
-  "release_line": "v0.1.0-leyu-opinionated-workflow",
+  "release_line": "v0.1.0",
   "product_kind": "opinionated_personal_workflow",
   "policy": "Only original, neutral, or explicitly reviewed public workflow material is resolved; private/source-derived/unknown material is excluded.",
   "files": {

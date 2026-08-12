@@ -28,8 +28,17 @@ LOCAL_GATE_NAMES = {
 EXTERNAL_GATE_NAMES = {"exact_head_github_actions"}
 
 
+def _reject_duplicate_keys(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError(f"duplicate JSON key: {key}")
+        result[key] = value
+    return result
+
+
 def _load_json(path: Path) -> dict[str, Any]:
-    value = json.loads(path.read_text(encoding="utf-8-sig"))
+    value = json.loads(path.read_text(encoding="utf-8-sig"), object_pairs_hook=_reject_duplicate_keys)
     if not isinstance(value, dict):
         raise ValueError(f"JSON object required: {path}")
     return value
